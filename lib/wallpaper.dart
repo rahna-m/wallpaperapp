@@ -18,7 +18,7 @@ class _WallpaperState extends State<Wallpaper> {
 
   fetchapi() async {
     await http.get(Uri.parse('https://api.pexels.com/v1/curated?per_page=80'), 
-    headers: {'Authorization' : '0mZe2CSUudDmdh49Q4cDoZcj4eoBfcFWhXhtborCDiCkPbEr8bvvAyrT'})
+    headers: {'Authorization' : 'add your pexel-key from pexel website'})
     .then((value) {
        Map result = jsonDecode(value.body);
      setState(() {
